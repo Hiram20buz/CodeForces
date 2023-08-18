@@ -9,3 +9,6 @@ https://codeforces.com/problemset
 https://cses.fi/book/book.pdf
 
 https://github.com/Errichto/youtube/tree/master
+
+
+https://codeforces.com/problemset/page/1?order=BY_SOLVED_DESC
