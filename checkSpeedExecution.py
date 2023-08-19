@@ -3,7 +3,6 @@ import time
 start_time = time.time()
 
 # Your code here
-#w=int(input('Weight: '))
 print("NO" if 1 % 2 else "YES")
 
 end_time = time.time()
