@@ -9,7 +9,7 @@ public class Watermelon4A {
 		int N = Integer.parseInt(in.readLine());
 	
 		 if ((N % 2 != 0) || (N == 2)) {
-		    System.out.println("N0");
+		    System.out.println("NO");
 		} else {
 		    System.out.println("YES");
 		}
