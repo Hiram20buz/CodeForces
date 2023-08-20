@@ -12,3 +12,6 @@ GNU G++17 7.3.0
 
 ### c
 GNU GCC C11 5.1.0
+
+### java
+Java 11.0.6
