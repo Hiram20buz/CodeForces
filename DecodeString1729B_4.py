@@ -12,3 +12,5 @@ while i < len(a):
 for j in range(len(a)):
     if a[j] == '1':
         print(''.join(a[j:j+3]))
+
+#if a[i] == '1' and a[i+2] == '0' :
