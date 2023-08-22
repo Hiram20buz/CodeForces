@@ -1,3 +1,4 @@
+'''
 expo=int(input())
 lst=[]
 sum=1
@@ -8,6 +9,9 @@ while True:
     sum=sum*(5**expo)
     
 print(5*sum)
-    
+'''
+input()
+print(25)
+ 
     
     
