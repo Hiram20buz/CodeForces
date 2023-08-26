@@ -1,4 +1,3 @@
-
 def x(li,lf,n):
     if(n==0):
         lst.append(lf)
