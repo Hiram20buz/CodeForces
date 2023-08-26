@@ -1,5 +1,4 @@
-lst=[]
-lst.append(100)
+
 def x(li,lf,n):
     if(n==0):
         lst.append(lf)
@@ -11,5 +10,16 @@ def x(li,lf,n):
         n = n-1
         return x(result,lf,n)
         
+        
+l=int(input())
+total=[]
 
-print(x(100,200,2))
+for i in range(l):
+    lst1=list(map(int,input().split()))
+    n = lst1[len(lst1)-1]
+    lst=[]
+    lst.append(lst1[0])
+    total.append(x(lst1[0],lst1[len(lst1)-2],n-2))
+    
+for sublist in total:
+    print(*sublist)
