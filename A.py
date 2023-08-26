@@ -18,7 +18,11 @@ for i in range(l):
     n = lst1[len(lst1)-1]
     lst=[]
     lst.append(lst1[0])
-    total.append(x(lst1[0],lst1[len(lst1)-2],n-2))
+    final=x(lst1[0],lst1[len(lst1)-2],n-2)
+    if(len(set(final)) == len(final)):
+        total.append(final)
+    else:
+        total.append([-1])
     
 for sublist in total:
     print(*sublist)
