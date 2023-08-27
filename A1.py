@@ -1,4 +1,7 @@
 # 1 11 5
+'''
+substract now from right to left before left to right 
+'''
 import math  
 def x(li,lf,n):
     if(n==0):
@@ -26,6 +29,7 @@ def y(x,i):
         else:
             return [-1]
     elif i<len(x)-1:
+        #yInverse(x)
         x[i]=x[i]+1
         return y(x,i+1)
         
