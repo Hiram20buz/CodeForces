@@ -1,3 +1,4 @@
+# 1 11 5
 import math  
 def x(li,lf,n):
     if(n==0):
@@ -18,6 +19,7 @@ def check_decreasing_after_subtraction(lst):
     return all(dif[i] > dif[i+1] for i in range(len(dif)-1))
 
 def y(x,i):
+    print(x)
     if check_decreasing_after_subtraction(x):
         if(len(set(x)) == len(x)):
             return x
