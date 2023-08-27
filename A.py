@@ -1,10 +1,11 @@
+import math  
 def x(li,lf,n):
     if(n==0):
         lst.append(lf)
         return lst
     
     else:
-        result=(lf+li)//2+1
+        result=math.ceil((lf+li)//2)
         lst.append(result)
         n = n-1
         return x(result,lf,n)
