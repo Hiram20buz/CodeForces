@@ -30,6 +30,10 @@ def y(x,i):
     elif i == len(x)-2 :
         return [-1]
         
+    else:
+        return [-1]
+        
+        
 l=int(input())
 total=[]
 
