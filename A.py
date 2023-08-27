@@ -20,6 +20,7 @@ for i in range(l):
     lst=[]
     lst.append(lst1[0])
     final=x(lst1[0],lst1[len(lst1)-2],n-2)
+    lst[-2] = lst[-2] + 1
     if(len(set(final)) == len(final)):
         total.append(final)
     else:
