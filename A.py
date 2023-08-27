@@ -9,7 +9,15 @@ def x(li,lf,n):
         lst.append(result)
         n = n-1
         return x(result,lf,n)
+  
+def check_decreasing_after_subtraction(lst):
+    differences = [lst[i+1] - lst[i] for i in range(len(lst)-1)]
+    is_decreasing = all(diff >= 0 for diff in differences)
+    if(len(set(differences)) == len(differences) and is_decreasing ):
+        return True
         
+    else:
+        return False      
         
 l=int(input())
 total=[]
@@ -21,7 +29,7 @@ for i in range(l):
     lst.append(lst1[0])
     final=x(lst1[0],lst1[len(lst1)-2],n-2)
     lst[-2] = lst[-2] + 1
-    if(len(set(final)) == len(final)):
+    if(len(set(final)) == len(final) and check_decreasing_after_subtraction(lst)):
         total.append(final)
     else:
         total.append([-1])
