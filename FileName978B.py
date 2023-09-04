@@ -1,12 +1,12 @@
 import re
 n=int(input())
-total=input()
+total=list(input())
 lst=[]
 
 def remove_char(lst, char):
     del lst[lst.index(char)]
     
-if re.search('xxx', total):
+if re.search('xxx', "".join(total)):
     print('xxx in string')
 else:
     print('Not xxx in string')
@@ -19,10 +19,7 @@ lst = ['x', 'x', 'x', 'i', 'i', 'i']
 def remove_char(lst, char):
     del lst[lst.index(char)]
      
-st="".join(lst)
-print(st)
-while (re.search('xxx', st)):
+while (re.search('xxx', "".join(lst))):
     remove_char(lst, 'x')
     print(lst)
-    
 '''
