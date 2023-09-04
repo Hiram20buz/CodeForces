@@ -7,8 +7,9 @@ for i in range(n):
     sum=total[0]-2
     if(sum > 0):
         floor=floor+1
-    
-    lst.append(math.ceil(sum/total[1])+1)
-    
+        lst.append(math.ceil(sum/total[1])+1)
+    else:
+        lst.append(1)
+  
 for i in lst:
     print(i)
