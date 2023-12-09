@@ -1,16 +1,18 @@
 import re
-n=int(input())
-total=list(input())
-lst=[]
 
-def remove_char(lst, char):
-    del lst[lst.index(char)]
+def delete_consecutive_x(string):
+    modified_string = list(string)
+    i = 0
+    while i < len(modified_string) - 2:
+        if modified_string[i:i+3] == ['x', 'x', 'x']:
+            modified_string.pop(i + 1)  # Delete one 'x' in the group of three consecutive 'x's
+        else:
+            i += 1
+
+    return ''.join(modified_string)
     
-def kill(lst):     
-    while (re.search('xxx', "".join(lst))):
-        remove_char(lst, 'x')
     
-if re.search('xxx', "".join(total)):
-    kill(total)
-    
-print(n-len(total)) 
+n=int(input())
+total=input()
+
+print(n - len(delete_consecutive_x(total)))
