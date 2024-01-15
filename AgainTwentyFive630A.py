@@ -12,6 +12,3 @@ print(5*sum)
 '''
 input()
 print(25)
- 
-    
-    
